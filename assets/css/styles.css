@@ -13,9 +13,10 @@ body {
 
 /* ============= Common ============== */
 .content {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 8px;
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -24,12 +25,10 @@ a {
 }
 
 .btn {
-    height: 50px;
     border-radius: 24.5px;
     background: #171100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    padding: 17px 0;
 }
 
 .btn:hover {
@@ -83,6 +82,110 @@ header {
     color: #FFF;
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+/* ============= Hero ============== */
+.hero {
+    background: #FFFCF4;
+    height: 810px;
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-info {
+    margin-left: 230px;
+    width: 470px;
+}
+
+.hero-info .title {
+    color: #171100;
+    font-family: "Sen";
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 117.241%;
+    letter-spacing: -0.116rem;
+}   
+
+.hero-info .title-desc {
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.67%;
+}
+
+.preview {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.preview-btn {
+    display: inline-block;
+    padding: 23px 34px;
+    border-radius: 32px;
+    background: #FFB900;
+}
+
+.preview-link {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+.preview-icon {
+    position: absolute;
+    top: -7px;
+}
+
+.preview span {
+    margin-left: 33px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero-info .stats {
+    margin-top: 48px;
+}
+
+.hero-info .stats .stats-title {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.stats-content {
+    margin-top: 8px;
+    display: flex;
+    gap: 28px;
+}
+
+.stats-content p {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.stats-content strong {
+    color: #171100;
+    margin-right: 12px; 
+    font-family: "Sen";
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 122.727%; 
 }
 
 
