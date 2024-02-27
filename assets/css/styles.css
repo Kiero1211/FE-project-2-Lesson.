@@ -188,5 +188,50 @@ header {
     line-height: 122.727%; 
 }
 
+/* ============= Courses ============== */
+.courses {
+    margin-top: 200px;
+}
 
+.courses .sub-title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
 
+.courses .sub-title-desc {
+    width: 460px;
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.67%;
+}
+
+.courses-selection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-selection .selection-tool {
+    display: flex;
+}
+
+.courses-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.course-item {
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    overflow: hidden;
+}
+
+.course-thumb {
+    height: 278px;
+    width: 100%;
+    object-fit: cover;
+}
