@@ -41,44 +41,55 @@ a {
 
 /* ============= Header ============== */
 header {
-    height: 90px;
     background: #FFFCF4;
 }
 
+header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
 .navbar {
-    padding-top: 36px;
+    padding: 36px 0 8px;
     display: flex;
     align-items: center;
+
 }
 
 .navigations {
     display: flex;
     margin-left: auto;
-    margin-right: 70px;
-    gap: 42px;
+    margin-right: 49px;
 }
 
 .navigations  a {
+    position: relative;
     font-size: 1.6rem;
     font-weight: 400;
+    padding: 0 21px;
 }
 
-.navigations li:first-child a {
-    position: relative;
+.navigations  a:hover {
     color: #171100;
-    font-size: 1.6rem;
-    font-weight: 600;
+    text-shadow: 1px 0 0 currentColor;
 }
 
-.navigations li:first-child a::after {
+.navigations li.active a::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 21px;
     width: 12px;
     height: 2px;
     border-radius: 1px;
     background: #171100;
+}
+
+.navigations li.active a {
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .navbar .sign-up-link {
